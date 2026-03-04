@@ -1,0 +1,98 @@
+eduhpicolo@mac tech_test_ino % npm audit fix                            
+
+added 1 package, and audited 53 packages in 2s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+eduhpicolo@mac tech_test_ino % npm test                                 
+
+> test-js@1.0.0 test
+> vitest run
+
+
+ RUN  v3.2.4 /Users/eduhpicolo/source/tech_test_ino
+
+ ✓ Winning Combinations/tests/winning-combinations.test.ts (27 tests) 9ms
+   ✓ when line is [1,6,6,7,2,3] returns [] 2ms
+   ✓ when line is [1,6,6,7,2,2] returns [] 0ms
+   ✓ when line is [1,2,6,6,6] returns [[6,[2,3,4]]] 0ms
+   ✓ when line is [3,3,3,8,6,3] returns [[3,[0,1,2]]] 0ms
+   ✓ when line is [3,3,3,8,8,8] returns [[3,[0,1,2]],[8,[3,4,5]]] 0ms
+   ✓ when line is [3,4,3,3,3,3] returns [[3,[2,3,4,5]]] 0ms
+   ✓ when line is [9,9,5,9,9] returns [] 0ms
+   ✓ when line is [9,5,5,9,9] returns [] 0ms
+   ✓ when line is [9,5,9,5,9] returns [] 0ms
+   ✓ when line is [9,5,9,5,9] returns [] 0ms
+   ✓ when line is [5,9,5,9,5] returns [] 0ms
+   ✓ when line is [6,6,3,0,6] returns [] 0ms
+   ✓ when line is [1,2,0,0,3,3] returns [[2,[1,2,3]],[3,[2,3,4,5]]] 0ms
+   ✓ when line is [1,1,0,0,3,3] returns [[1,[0,1,2,3]],[3,[2,3,4,5]]] 0ms
+   ✓ when line is [0,0,0,3,3,3] returns [[3,[0,1,2,3,4,5]]] 0ms
+   ✓ when line is [0,0,2,3,3,3] returns [[2,[0,1,2]],[3,[3,4,5]]] 0ms
+   ✓ when line is [2,0,0,3,3,3] returns [[2,[0,1,2]],[3,[1,2,3,4,5]]] 0ms
+   ✓ when line is [4,4,6,0,2,2] returns [[2,[3,4,5]]] 0ms
+   ✓ when line is [3,5,8,5,5,0] returns [[5,[3,4,5]]] 0ms
+   ✓ when line is [3,0,3,4,4,0] returns [[3,[0,1,2]],[4,[3,4,5]]] 0ms
+   ✓ when line is [0,8,6,8,8] returns [] 0ms
+   ✓ when line is [8,8,6,8,0] returns [] 0ms
+   ✓ when line is [0,0,0,0,8] returns [[8,[0,1,2,3,4]]] 0ms
+   ✓ when line is [8,0,0,0,0] returns [[8,[0,1,2,3,4]]] 0ms
+   ✓ when line is [0,0,0,0,0] returns [[0,[0,1,2,3,4]]] 0ms
+   ✓ when line is [1,1,2,0,0] returns [[2,[2,3,4]]] 0ms
+   ✓ when line is [11,0,0,7,4] returns [[7,[1,2,3]]] 0ms
+
+ Test Files  1 passed (1)
+      Tests  27 passed (27)
+   Start at  14:36:44
+   Duration  865ms (transform 82ms, setup 0ms, collect 63ms, tests 9ms, environment 0ms, prepare 131ms)
+
+eduhpicolo@mac tech_test_ino % npm run test:winning                     
+
+> test-js@1.0.0 test:winning
+> vitest run 'Winning Combinations/tests/winning-combinations.test.ts'
+
+
+ RUN  v3.2.4 /Users/eduhpicolo/source/tech_test_ino
+
+ ✓ Winning Combinations/tests/winning-combinations.test.ts (27 tests) 10ms
+   ✓ when line is [1,6,6,7,2,3] returns [] 4ms
+   ✓ when line is [1,6,6,7,2,2] returns [] 0ms
+   ✓ when line is [1,2,6,6,6] returns [[6,[2,3,4]]] 0ms
+   ✓ when line is [3,3,3,8,6,3] returns [[3,[0,1,2]]] 0ms
+   ✓ when line is [3,3,3,8,8,8] returns [[3,[0,1,2]],[8,[3,4,5]]] 0ms
+   ✓ when line is [3,4,3,3,3,3] returns [[3,[2,3,4,5]]] 0ms
+   ✓ when line is [9,9,5,9,9] returns [] 0ms
+   ✓ when line is [9,5,5,9,9] returns [] 0ms
+   ✓ when line is [9,5,9,5,9] returns [] 0ms
+   ✓ when line is [9,5,9,5,9] returns [] 0ms
+   ✓ when line is [5,9,5,9,5] returns [] 0ms
+   ✓ when line is [6,6,3,0,6] returns [] 0ms
+   ✓ when line is [1,2,0,0,3,3] returns [[2,[1,2,3]],[3,[2,3,4,5]]] 0ms
+   ✓ when line is [1,1,0,0,3,3] returns [[1,[0,1,2,3]],[3,[2,3,4,5]]] 0ms
+   ✓ when line is [0,0,0,3,3,3] returns [[3,[0,1,2,3,4,5]]] 0ms
+   ✓ when line is [0,0,2,3,3,3] returns [[2,[0,1,2]],[3,[3,4,5]]] 0ms
+   ✓ when line is [2,0,0,3,3,3] returns [[2,[0,1,2]],[3,[1,2,3,4,5]]] 0ms
+   ✓ when line is [4,4,6,0,2,2] returns [[2,[3,4,5]]] 0ms
+   ✓ when line is [3,5,8,5,5,0] returns [[5,[3,4,5]]] 0ms
+   ✓ when line is [3,0,3,4,4,0] returns [[3,[0,1,2]],[4,[3,4,5]]] 0ms
+   ✓ when line is [0,8,6,8,8] returns [] 0ms
+   ✓ when line is [8,8,6,8,0] returns [] 0ms
+   ✓ when line is [0,0,0,0,8] returns [[8,[0,1,2,3,4]]] 0ms
+   ✓ when line is [8,0,0,0,0] returns [[8,[0,1,2,3,4]]] 0ms
+   ✓ when line is [0,0,0,0,0] returns [[0,[0,1,2,3,4]]] 0ms
+   ✓ when line is [1,1,2,0,0] returns [[2,[2,3,4]]] 0ms
+   ✓ when line is [11,0,0,7,4] returns [[7,[1,2,3]]] 0ms
+
+ Test Files  1 passed (1)
+      Tests  27 passed (27)
+   Start at  14:36:49
+   Duration  692ms (transform 73ms, setup 0ms, collect 69ms, tests 10ms, environment 0ms, prepare 95ms)
+
+eduhpicolo@mac tech_test_ino % npx ts-node Cadence/SlotMachineCadence.ts
+CADENCES:  {
+  roundOne: [ 0, 0.25, 2.25, 4.25, 4.5 ],
+  roundTwo: [ 0, 2, 4, 6, 8 ],
+  roundThree: [ 0, 0.25, 0.5, 0.75, 1 ]
+}
